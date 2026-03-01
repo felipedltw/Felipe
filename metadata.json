@@ -1,0 +1,5 @@
+{
+  "name": "Personal Portfolio",
+  "description": "A responsive personal information website built with React, Vite, and Tailwind CSS, ready for GitHub Pages deployment.",
+  "requestFramePermissions": []
+}
