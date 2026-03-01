@@ -7,13 +7,13 @@ import { motion } from 'motion/react';
 import { Github, Linkedin, Mail, MapPin, Briefcase, GraduationCap, Code2, ExternalLink } from 'lucide-react';
 
 const personalInfo = {
-  name: "Alex Developer",
+  name: "Felipe De la Torre",
   role: "Full-Stack Engineer & Designer",
   location: "San Francisco, CA",
   email: "hello@example.com",
   about: "I build crafted, performant, and accessible web experiences. Passionate about bridging the gap between design and engineering.",
   skills: [
-    "TypeScript", "React", "Node.js", "Next.js", 
+    "TypeScript", "React", "Node.js", "Next.js",
     "Tailwind CSS", "PostgreSQL", "GraphQL", "Figma"
   ],
   experience: [
@@ -57,9 +57,9 @@ export default function App() {
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900 font-sans selection:bg-zinc-900 selection:text-zinc-50">
       <main className="max-w-3xl mx-auto px-6 py-20 md:py-32 space-y-24">
-        
+
         {/* Hero Section */}
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -73,7 +73,7 @@ export default function App() {
               {personalInfo.role}
             </p>
           </div>
-          
+
           <p className="text-lg text-zinc-600 leading-relaxed max-w-2xl">
             {personalInfo.about}
           </p>
@@ -99,7 +99,7 @@ export default function App() {
         </motion.section>
 
         {/* Experience Section */}
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -128,7 +128,7 @@ export default function App() {
         </motion.section>
 
         {/* Projects Section */}
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -141,8 +141,8 @@ export default function App() {
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
             {personalInfo.projects.map((project, index) => (
-              <a 
-                key={index} 
+              <a
+                key={index}
                 href={project.link}
                 className="group block p-6 bg-white rounded-2xl border border-zinc-200 hover:border-zinc-300 hover:shadow-sm transition-all"
               >
@@ -168,7 +168,7 @@ export default function App() {
         </motion.section>
 
         {/* Skills Section */}
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -181,7 +181,7 @@ export default function App() {
           </div>
           <div className="flex flex-wrap gap-3">
             {personalInfo.skills.map((skill, index) => (
-              <span 
+              <span
                 key={index}
                 className="px-4 py-2 bg-white border border-zinc-200 text-zinc-700 rounded-full text-sm font-medium shadow-sm"
               >
@@ -192,7 +192,7 @@ export default function App() {
         </motion.section>
 
         {/* Education Section */}
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
